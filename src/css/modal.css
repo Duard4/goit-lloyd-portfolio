@@ -19,26 +19,22 @@ header {
   cursor: pointer;
 }
 
-/* Модальное окно */
 .modal {
   position: fixed;
-  top: 50%; /* Центрирование по вертикали */
-  left: 50%; /* Центрирование по горизонтали */
-  transform: translate(-50%, -50%); /* Сдвиг для центрирования */
-  width: 360px; /* Указанная ширина */
-  height: 800px; /* Указанная высота */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 800px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   padding: 20px;
 }
 
-/* Скрытие модального окна */
 .modal.hidden {
   display: none;
 }
@@ -48,25 +44,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
-  font-size: 24px;
+  padding: 10px 0;
 }
 
 .logo {
   font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  gap: 5px;
 }
 
-#closeButton {
-  background: none;
-  border: none;
-  color: black;
-  font-size: 24px;
-  cursor: pointer;
+.logo-part-1 {
+  color: #4caf50;
+}
+
+.logo-part-2 {
+  color: #2196f3;
 }
 
 .modal-content {
   text-align: center;
-  margin-top: 20px;
+  margin: auto 0;
 }
 
 .modal-link {
@@ -75,10 +73,20 @@ header {
   text-decoration: none;
   font-size: 20px;
   margin: 15px 0;
+  transition: color 0.3s;
 }
 
 .modal-link:hover {
-  text-decoration: underline;
+  color: #4caf50;
+}
+
+#closeButton {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
 }
 
 .modal-backdrop {
