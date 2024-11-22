@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 50%; /* Центрирование по вертикали */
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвиг для центрирования */
+  width: 360px; /* Указанная ширина */
+  height: 800px; /* Указанная высота */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Скрытие модального окна */
+.modal.hidden {
+  display: none;
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+#closeButton {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.modal-link:hover {
+  text-decoration: underline;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.modal-backdrop.active {
+  display: block;
+}
