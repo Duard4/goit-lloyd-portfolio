@@ -1,0 +1,150 @@
+
+body {
+  
+  font-family: "Poppins", sans-serif;
+  --second-family: "Impact", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2A2D32;
+}
+
+header {
+  background-color: #2A2D32;
+  color: #F0F0F0;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 108px;
+line-height: 115%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #F0F0F0;
+}
+.header-span {
+  color: #14C57C;
+}
+
+main {
+  padding: 2rem;
+  background-color: #2A2D32;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%;
+  
+}
+
+.project-list li {
+  background-color: #2A2D32;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: flex-start;
+   text-align: left; 
+   width: 80%;
+   position: relative;
+}
+
+.project-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px; 
+}
+
+.project-list h3 {
+  margin: 0.5rem 0;
+  text-align: left;
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 36px;
+line-height: 133%;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+color: #F0F0F0;
+}
+
+.project-list p {
+  margin: 0.5rem 0;
+  text-align: left;
+  font-family: var(--font-family);
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.03em;
+color: #F0F0F0;
+}
+.project-list .button { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  padding: 0.5rem 1rem; 
+  background-color: #2A2D32;
+  color: #F0F0F0;
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  gap: 12px;
+  align-self: flex-end;
+  position: absolute;
+  right: 1rem; 
+  top: 72rem;
+  width: 125px;
+  height: 48px;
+  box-shadow: 0px 4px 4px 0px #000000;
+  
+}
+
+
+
+.project-list a:hover {
+  background-color: #3B3F45;
+  
+}
+
+.load-more { 
+  display: block; 
+  margin: 2rem auto; 
+  padding: 0.75rem 1.5rem; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+  background-color: #2A2D32;
+  border: none; 
+  position: relative; 
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #F0F0F0;
+
+}
+
+.load-more::after { 
+  content: ''; 
+  display: block; 
+  width: 80%; 
+  height: 2px; 
+  background-color: #14C57C;
+  position: absolute; 
+  bottom: 0; 
+  left: 10%; 
+  text-align: center;
+}
+
+.load-more:hover {
+  color: #14C57C;
+}
