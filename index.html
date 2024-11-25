@@ -1,29 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <script type="module" crossorigin src="/goit-js-team-project/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-team-project/assets/vendor-A99WFo5x.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/vendor-CTkdz8MY.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/index-D-DSAoyj.css">
-  </head>
 
-  <body>
-    
-    <main>
-      
-      <section id="about_me" class="about-me-container">
-  <h1 class="about-me">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script type="module" crossorigin src="/goit-js-team-project/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-team-project/assets/vendor-WbduCoRA.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/vendor-DmpqLf7P.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/index-O6g7RWf2.css">
+</head>
+
+<body>
+  <section class="header">
+  <div class="container">
+    <h1 class="header-logo">
+      lloyd<span class="header-logo_sp">jefferson.</span>
+    </h1>
+    <div class="nav-container">
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="move-span"></span>
+      </label>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#work-together">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-toggle">
+      <input type="checkbox" id="modal-check" class="modal-check" />
+      <label for="modal-check" class="menu-icon">
+        <svg class="modal-svg" tabindex="0">
+          <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-vector"></use>
+        </svg>
+
+        <svg class="modal-close" tabindex="0">
+          <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-close"></use>
+        </svg>
+      </label>
+    </div>
+  </div>
+</section>
+  <div class="menu_modal" id="menuModal">
+  <div class="logo">
+    <h1 class="logo_part1">
+      LLOYD<span class="logo_part2">JEFFERSON.</span>
+    </h1>
+
+    <svg class="icon" id="closeModal">
+      <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-close"></use>
+    </svg>
+  </div>
+  <div class="menu_option">
+    <ul class="option">
+      <li class="li-order">
+        <a href="#about-me" class="order">About me</a>
+      </li>
+      <li class="li-order">
+        <a href="#projects" class="order">Projects</a>
+      </li>
+      <li class="li-order">
+        <a href="#work-together" class="order">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <main>
+    <section class="hero-section" id="hero">
+  <div class="title-img container">
+    <h1 class="hero-title">
+      Hello, I am <span class="title-span">Fullstack developer</span>
+    </h1>
+    <picture>
+      <source srcset="/goit-js-team-project/assets/hero-3GYtg5GX.jpg 1x, /goit-js-team-project/assets/hero@2x-KvewgRes.jpg 2x" />
+      <img src="/goit-js-team-project/assets/hero-3GYtg5GX.jpg" alt="developer" class="hero-img" />
+    </picture>
+  </div>
+  <div class="text-link container">
+    <div class="order-link">
+      <svg class="arrow" width="28" height="28">
+        <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-arrow-long"></use>
+      </svg>
+      <a href="#work-together" class="hero-link">Order the projects</a>
+
+    </div>
+
+    <p class="hero-sub">
+      I work with people all over the world to create
+      <span class="hero-span">impressive</span> and
+      <span class="hero-span">functional websites</span> that reflect each
+      client’s unique personality.
+    </p>
+  </div>
+  <div class="soc-links">
+    <ul class="soc-list list">
+      <li class="soc-item">
+        <a href="https://www.instagram.com/goitclub/" target="_blank" class="soc-a">Instagram</a>
+      </li>
+      <li class="soc-item">
+        <a href="https://www.facebook.com/goITclub/" target="_blank" class="soc-a">Facebook</a>
+      </li>
+      <li class="soc-item">
+        <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
+          class="soc-a">Linkedin</a>
+      </li>
+      <li class="soc-item">
+        <a href="https://github.com/Duard4/goit-js-team-project" target="_blank" class="soc-a">GitHub</a>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section id="about_me" class="container">
+  <h2 class="about-me-title">
     ABOUT
     <span class="text-green">ME</span>
-  </h1>
+  </h2>
   <div class="bio-container">
     <picture class="bio-image">
       <source srcset="/goit-js-team-project/assets/desktop-D1VyzHua.jpg 1x, /goit-js-team-project/assets/desktop@2x-jc44gLhj.jpg 2x" media="(min-width: 1280px)" />
@@ -82,7 +183,7 @@
     </div>
   </div>
 </section>
-      <section class="tech-skills-section" id="tech-skills">
+    <section class="tech-skills-section" id="tech-skills">
     <h2 class="visually-hidden">Tech skills</h2>
     <div class="marquee">
         <ul class="marquee__content tech-skills-list">
@@ -121,14 +222,14 @@
         </ul>
     </div>
 </section>
-      <section id="projects">
+    <section id="projects">
   <div class="container projects-container">
     <h2 class="projects-title">My <span class="title-span">Projects</span></h2>
     <ul class="project-list"></ul>
     <button class="load-more" type="button">Load more</button>
   </div>
 </section>
-      <section id="benefits" class="benefits">
+    <section id="benefits" class="benefits">
     <div class="benefits-background"></div>
     <div class="container">
       <h2 class="benefit-title">
@@ -138,7 +239,7 @@
         <li class="benefit-list-item">
           <div class="benefit-icon">
             <svg width="24" height="24">
-              <use href="/goit-js-team-project/assets/icons-Cg4DolLJ.svg#icon-benefits-expertise"></use>
+              <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-user"></use>
             </svg>
           </div>
           <h3 class="benefit-list-topic">EXPERTISE</h3>
@@ -150,7 +251,7 @@
         <li class="benefit-list-item">
           <div class="benefit-icon">
             <svg width="24" height="24">
-              <use href="/goit-js-team-project/assets/icons-Cg4DolLJ.svg#icon-benefits-communication"></use>
+              <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-message-chat-circle"></use>
             </svg>
           </div>
           <h3 class="benefit-list-topic">COMMUNICATION</h3>
@@ -162,7 +263,7 @@
         <li class="benefit-list-item">
           <div class="benefit-icon">
             <svg width="24" height="24">
-              <use href="/goit-js-team-project/assets/icons-Cg4DolLJ.svg#icon-benefits-art"></use>
+              <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-brush"></use>
             </svg>
           </div>
           <h3 class="benefit-list-topic">ART</h3>
@@ -174,7 +275,7 @@
         <li class="benefit-list-item">
           <div class="benefit-icon">
             <svg width="24" height="24">
-              <use href="/goit-js-team-project/assets/icons-Cg4DolLJ.svg#icon-benefits-urgent"></use>
+              <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-hourglass"></use>
             </svg>
           </div>
           <h3 class="benefit-list-topic">URGENT EXECUTION</h3>
@@ -186,8 +287,132 @@
       </ul>
     </div>
   </section>
-      
-      <section class="reviews" id="reviews">
+    <section id="faq" class="faq-section">
+  <div class="faq-container green-decor">
+    <h2 class="faq-title">
+      Frequently asked <span class="faq-title-highlight">question</span>
+    </h2>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <h3 class="faq-header">
+          What programming lahguages are most often used in your project?
+
+          <button class="faq-btn">
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-down"></use>
+            </svg>
+            <svg class="faq-btn-open" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-up"></use>
+            </svg>
+          </button>
+        </h3>
+        <p class="faq-content">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-header">
+          What are the deadlines for the project?
+          <button class="faq-btn">
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-down"></use>
+            </svg>
+            <svg class="faq-btn-open" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-up"></use>
+            </svg>
+          </button>
+        </h3>
+        <p class="faq-content">
+          The terms of project implementation depend to a large extent on a
+          nnmber of factors, such as the scope of the project, its complexity,
+          and the availability of resourced. Determining exact deadlines is a
+          difficlt task, and it usualy occurs during the planning phase of the
+          project.
+        </p>
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-header">
+          What payment methods do you accept?
+          <button class="faq-btn" data-accordion-btn>
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-down"></use>
+            </svg>
+            <svg class="faq-btn-open" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-up"></use>
+            </svg>
+          </button>
+        </h3>
+        <p class="faq-content">
+          Payment throuh credit and debit cards sush as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-header">
+          How can I contact you?
+          <button class="faq-btn" data-accordion-btn>
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-down"></use>
+            </svg>
+            <svg class="faq-btn-open" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-up"></use>
+            </svg>
+          </button>
+        </h3>
+        <p class="faq-content">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </p>
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-header">
+          Do you provide advice or support?
+          <button class="faq-btn" data-accordion-btn>
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-down"></use>
+            </svg>
+            <svg class="faq-btn-open" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-up"></use>
+            </svg>
+          </button>
+        </h3>
+        <p class="faq-content">
+          The terms of project implementation depend to a large extent on a
+          nnmber of factors, such as the scope of the project, its complexity,
+          and the availability of resourced. Determining exact deadlines is a
+          difficlt task, and it usualy occurs during the planning phase of the
+          project.
+        </p>
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-header">
+          What does the process of developing a software product look like from
+          idea to implementation?
+
+          <button class="faq-btn" data-accordion-btn>
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-down"></use>
+            </svg>
+            <svg class="faq-btn-open" width="24" height="24">
+              <use href="/goit-js-team-project/assets/symbol-defs-1-C1vCriIS.svg#icon-vektor-up"></use>
+            </svg>
+          </button>
+        </h3>
+        <p class="faq-content">
+          Payment throuh credit and debit cards sush as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </p>
+      </li>
+    </ul>
+    <div class="background-img"></div>
+  </div>
+</section>
+    <section class="reviews" id="reviews">
   <div class="container">
     <h2 class="reviews-title">reviews</h2>
     <div class="swiper swiper">
@@ -196,32 +421,26 @@
       <div class="button-arrows">
         <button type="button" class="swiper-button-prev">
           <svg class="icon-arrow-narrow-left arrow-left" width="24" height="24">
-            <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
+            <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
         <button type="button" class="swiper-button-next">
-          <svg
-            class="icon-arrow-narrow-right arrow-right"
-            width="24"
-            height="24"
-          >
-            <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
+          <svg class="icon-arrow-narrow-right arrow-right" width="24" height="24">
+            <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
       </div>
     </div>
   </div>
 </section>
-
-      <section class="work-together-sec">
+    <section class="work-together-sec">
   <div class="container work-together-container green-dots">
     <div class="contact-box">
 
       <h2 class="work-together-title">
         <span class="one-line">
           <span>let’s</span>
-          <span style="color: var(--accet-green)">work</span></span
-        >
+          <span style="color: var(--accet-green)">work</span></span>
         <span style="color: var(--accet-green)">together</span>
       </h2>
 
@@ -231,76 +450,79 @@
           <li class="address-list-item">
             <a href="tel:+38 090 456 78 90">
               <svg class="address-icon">
-                <use
-                  href="../img/icons.svg#icon-phone"
-                  width="24"
-                  height="24"
-                ></use>
+                <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-phone" width="24" height="24"></use>
               </svg>
-              <span class="address-text">+38 090 456 78 90</span></a
-            >
+              <span class="address-text">+38 090 456 78 90</span></a>
           </li>
           <li class="address-list-item">
-            <a href="mailto: lloydjefferson@gmail.com"
-            >
+            <a href="mailto: lloydjefferson@gmail.com">
               <svg class="address-icon">
-                <use
-                  href="../img/icons.svg#icon-mail"
-                  width="24"
-                  height="24"
-                ></use>
+                <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-mail" width="24" height="24"></use>
               </svg>
-              <span class="address-text">lloydjefferson@gmail.com</span></a
-            >
+              <span class="address-text">lloydjefferson@gmail.com</span></a>
           </li>
           <li class="address-list-item">
-            <a href=""
-            >
+            <a href="">
               <svg class="address-icon">
-                <use
-                  href="../img/icons.svg#icon-location"
-                  width="24"
-                  height="24"
-                ></use>
+                <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-location" width="24" height="24"></use>
               </svg>
-              <span class="address-text">USA, New York</span></a
-            >
+              <span class="address-text">USA, New York</span></a>
           </li>
         </ul>
       </address>
     </div>
 
-<!--    using novalidate to prevent defaultInputCheckingMessage -->
+    <!--    using novalidate to prevent defaultInputCheckingMessage -->
     <form class="work-together-form" novalidate>
-      <input
-        class="form-input-base form-email"
-        type="email"
-        name="contact-email"
-        id="contact-email"
-        placeholder="Your email*"
-        required
-      />
+      <input class="form-input-base form-email" type="email" name="contact-email" id="contact-email"
+        placeholder="Your email*" required />
       <svg class="form-email-tick visually-hidden">
-        <use
-          href="/goit-js-team-project/assets/icons-Cg4DolLJ.svg#icon-success"
-          width="16"
-          height="16"
-        ></use>
+        <use href="/goit-js-team-project/assets/icons-BtNJdXzC.svg#icon-success" width="16" height="16"></use>
       </svg>
       <p class="form-email-error-message visually-hidden">Invalid email, try again</p>
-      <textarea
-        class="form-input-base form-message"
-        name="contact-message"
-        id="contact-message"
-        placeholder="Message"
-      ></textarea>
+      <textarea class="form-input-base form-message" name="contact-message" id="contact-message"
+        placeholder="Message"></textarea>
       <button type="submit" class="contact-submit-btn">Send message</button>
     </form>
   </div>
 </section>
+  </main>
 
-    </main>
-    
+  <footer class="footer">
+    <div class="footer-container container">
+        <div class="footer-logo-social">
+            <h3 class="footer-logo">lloyd<span class="footer-logo-sp">jefferson.</span></h3>
 
-  </body>
+
+            <ul class="footer-socials">
+                <li>
+                    <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer">
+                        Linkendin
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer">
+                        Github
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="copyright">© Copyright 2024. Made by LloydJefferson</p>
+    </div>
+</footer>
+
+
+</body>
+
 </html>

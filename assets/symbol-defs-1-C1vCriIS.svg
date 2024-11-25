@@ -1,0 +1,10 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="icon-vektor-down" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-width="2.667" d="m24 12-8 8-8-8"/>
+    </symbol>
+    <symbol id="icon-vektor-up" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-width="2.667" d="m24 20-8-8-8 8"/>
+    </symbol>
+  </defs>
+</svg>
