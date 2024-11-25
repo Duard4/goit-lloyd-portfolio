@@ -5,7 +5,7 @@
     width: 320px;
 }
 
-h3 {
+.about-me-title {
     font-weight: 500;
     font-size: 2rem;
     line-height: 125%;
@@ -14,7 +14,7 @@ h3 {
     margin-bottom: 32px;
 }
 
-p {
+.about-me-discr {
 
     font-weight: 300;
     font-size: 1rem;
@@ -22,7 +22,7 @@ p {
     letter-spacing: 0.03em;
 }
 
-ul {
+.about-me-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -31,18 +31,19 @@ ul {
     gap: 12px;
 }
 
-.about-me-list li {
+.about-me-list .about-me-item {
     position: relative;
     display: flex;
-    align-items: flex-start;
-    padding-left: 12px;
+    align-items: center;
+    padding-left: 32px;
+    
 }
 
- .about-me-list li::before {
+ .about-me-list .about-me-item::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 12px;
+    left: 12px;;
     transform: translateY(-50%);
     width: 4px;
     height: 4px;
