@@ -259,6 +259,7 @@
 .form-email-tick {
   position: absolute;
   top: 11%;
+  fill: var(--accet-green);
   right: 32px;
   transform: translateY(-11%) translateX(100%);
 }
