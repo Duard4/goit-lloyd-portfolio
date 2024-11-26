@@ -38,5 +38,12 @@
         <symbol id="icon-phone" viewBox="0 0 32 32">
             <path fill="none" stroke="#00b068" style="stroke:var(--color1, #00b068)" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.333" d="M3 9c0 11.045 8.955 20 20 20h3a3.004 3.004 0 0 0 3-3v-1.829a1.5 1.5 0 0 0-1.136-1.455l-5.897-1.475a1.498 1.498 0 0 0-1.564.556l-1.293 1.724c-.376.501-1.025.723-1.613.507a16.028 16.028 0 0 1-9.524-9.524c-.216-.588.005-1.237.507-1.613l1.724-1.293c.484-.361.703-.979.556-1.564L9.285 4.137A1.498 1.498 0 0 0 7.83 3.001H6.001a3.004 3.004 0 0 0-3 3v3z"/>
         </symbol>
+        <symbol id="icon-vector" viewBox="0 0 44 32">
+            <path d="M0.668 30.054v-2.667h42.667v2.667h-42.667zM0.668 17.334v-2.667h42.667v2.667h-42.667zM0.668 4.614v-2.667h42.667v2.667h-42.667z"></path>
+       </symbol>
+     <symbol id="icon-close" viewBox="0 0 32 32">
+         <path stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
+         <path stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
+</symbol>
     </defs>
 </svg>
