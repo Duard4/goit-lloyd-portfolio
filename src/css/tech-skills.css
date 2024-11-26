@@ -1,0 +1,88 @@
+.tech-skills-list {
+  padding-block: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  li {
+    text-wrap-mode: nowrap;
+    position: relative;
+  }
+  li::before {
+    content: '';
+    background-color: var(--accet-green);
+    border-radius: 2px;
+    width: 8px;
+    height: 8px;
+    left: -32px;
+    top: 18px;
+    border-radius: 2px;
+    position: absolute;
+  }
+}
+
+.marquee {
+  background-color: var(--light-accet);
+  color: var(--black);
+  --gap: 56px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.marquee.rotated {
+  background-color: var(--light-grey);
+  color: var(--accet-green);
+  transform: rotate(2deg);
+  z-index: 0;
+  li::before {
+    background-color: var(--black);
+  }
+  .marquee__content {
+    animation: reverseScroll 10s linear infinite;
+  }
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 10s linear infinite;
+}
+
+.marquee:hover .marquee__content {
+  animation-play-state: paused !important;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes reverseScroll {
+  from {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .tech-skills-list {
+    font-size: 2.25rem;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+}
