@@ -1,17 +1,29 @@
 const openModalBtn = document.querySelector('.menu-icon');
 const closeModalButton = document.getElementById('closeModal');
 const menuModal = document.getElementById('menuModal');
+<<<<<<< Updated upstream
 const overalay = document.getElementById('overlay');
+=======
+const overlay = document.getElementById('overlay');
+>>>>>>> Stashed changes
 
 if (openModalBtn && closeModalButton && menuModal) {
   openModalBtn.addEventListener('click', () => {
     menuModal.classList.add('open');
+<<<<<<< Updated upstream
     overalay.classList.add('open');
+=======
+    overlay.classList.add('open');
+>>>>>>> Stashed changes
   });
 
   closeModalButton.addEventListener('click', () => {
     menuModal.classList.remove('open');
+<<<<<<< Updated upstream
     overalay.classList.remove('open');
+=======
+    overlay.classList.remove('open');
+>>>>>>> Stashed changes
   });
 } else {
   console.error('Ошибка: Один или несколько элементов не найдены.');

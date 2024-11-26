@@ -34,7 +34,11 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
+<<<<<<< Updated upstream
   background-color: rgba(0, 0, 0, 0.669);
+=======
+  background-color: rgba(0, 0, 0, 0.711);
+>>>>>>> Stashed changes
   z-index: 999;
   opacity: 0;
   visibility: hidden;
