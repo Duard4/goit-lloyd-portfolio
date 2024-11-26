@@ -42,13 +42,15 @@ img {
   margin-bottom: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
-  transform: translateY(-100%);
+  transform: translateX(100%);
   position: fixed;
+  top: 50%;
+  right: 13%;
+  transform: translateY(-50%) translateX(100%);
 }
 
 .menu_modal.open {
-  /* display: flex; */
-  transform: translateY(45%);
+  transform: translateY(-50%) translateX(0);
   opacity: 1;
   visibility: visible;
 }
