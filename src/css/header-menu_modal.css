@@ -45,7 +45,7 @@ img {
   transform: translateX(100%);
   position: fixed;
   top: 50%;
-  right: 13%;
+  /* right: 13%; */
   transform: translateY(-50%) translateX(100%);
 }
 
@@ -73,7 +73,7 @@ img {
 .logo_part1 {
   font-size: 24px;
   display: flex;
-
+  text-transform: uppercase;
   padding-left: 20px;
   padding-bottom: 20px;
   color: #292929;
@@ -88,6 +88,8 @@ img {
 }
 
 .logo_part2 {
+  text-transform: uppercase;
+
   color: #00b068;
   font-family: Impact;
   font-size: 24px;
@@ -103,10 +105,12 @@ img {
   width: 32px;
   height: 32px;
   cursor: pointer;
-  display: flex;
-  padding-top: 16px;
+  /* display: flex; */
+  /* margin-top: 16px; */
   margin-right: 20px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  color: black;
+  background-color: bisque;
 }
 
 .menu_option {
