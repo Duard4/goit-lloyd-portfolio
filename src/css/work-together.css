@@ -1,0 +1,325 @@
+.form-modal-wrapper {
+  min-width: 280px;
+  max-width: 320px;
+  margin: 0 20px;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+.form-modal-text-container {
+  padding: 8px 16px 32px 16px;
+}
+.form-modal-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accet-green);
+  margin: 0 auto 16px;
+}
+.form-modal-message {
+  font-weight: 300;
+}
+.form-modal-icon-close-wrapper {
+  display: flex;
+  justify-content: end;
+}
+.form-modal-icon-close {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .form-modal-wrapper {
+    max-width: 492px;
+  }
+  .form-modal {
+    padding: 20px;
+  }
+  .form-modal-text-container {
+    padding: 20px 44px 44px 44px;
+  }
+}
+
+.green-dots {
+  position: relative;
+}
+.green-dots::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 50%;
+
+  transform: translateY(-124px) translateX(calc(50% - 32px));
+
+  background-image: url('/img/green-dots-work-together-tab-1x.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  pointer-events: none;
+}
+@media screen and (max-width: 767px) {
+  .green-dots::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .green-dots::after {
+    background-image: image-set(
+      url('/img/green-dots-work-together-tab-1x.png') 1x,
+      url('/img/green-dots-work-together-tab-2x.png') 2x
+    );
+  }
+}
+@media screen and (min-width: 1280px) {
+  .green-dots::after {
+    transform: translateY(-124px) translateX(calc(50% - 32px));
+    background-image: image-set(
+      url('/img/green-dots-work-together-pc-1x.png') 1x,
+      url('/img/green-dots-work-together-pc-2x.png') 2x
+    );
+  }
+}
+
+.work-together-sec {
+  padding: 80px 0;
+}
+@media screen and (min-width: 768px) {
+  .work-together-sec {
+    padding: 124px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .work-together-sec {
+    padding: 164px 0;
+  }
+  .work-together-container {
+    display: flex;
+  }
+}
+
+.work-together-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 3.25rem;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+
+  display: block;
+  max-width: 254px;
+}
+.work-together-title .one-line {
+  display: flex;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .work-together-title {
+    font-size: 6.75rem;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    max-width: 508px;
+  }
+  .work-together-title .one-line {
+    gap: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+
+.contact-box p {
+  max-width: 320px;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .contact-box p {
+    max-width: 488px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-box p {
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+  .contact-box {
+    width: 50%;
+  }
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.address-list-item {
+  display: flex;
+  align-items: center;
+}
+.address-list-item a {
+  display: inline-flex;
+  align-items: center;
+}
+.address-text {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-text:hover,
+.address-text:focus {
+  color: var(--accet-green);
+}
+.address-icon {
+  margin-right: 16px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: var(--accet-green);
+}
+@media screen and (min-width: 768px) {
+  .address-list {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .address-list {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.work-together-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+.form-input-base {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  background-color: var(--light-grey);
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+.form-input-base::placeholder {
+  color: var(--black);
+}
+.form-email {
+  height: 48px;
+  padding: 12px 48px 12px 16px;
+}
+.form-email.error-color {
+  color: var(--error);
+}
+/*.form-email:hover, .form-email:focus, .form-message:hover, .form-message:focus {*/
+/*  outline: 2px solid var(--accet-green);*/
+/*}*/
+.form-email-error-message {
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--error);
+
+  position: absolute;
+  transform: translateY(52px);
+}
+.form-email-tick {
+  position: absolute;
+  top: 11%;
+  fill: var(--accet-green);
+  right: 32px;
+  transform: translateY(-11%) translateX(100%);
+}
+.form-message {
+  padding: 16px;
+  height: 128px;
+  resize: none;
+}
+.contact-submit-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 100%;
+  height: 48px;
+  background-color: var(--accet-green);
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-submit-btn:hover,
+.contact-submit-btn:focus {
+  background-color: var(--hover-green);
+}
+.form-modal-icon-close:hover {
+  stroke: var(--hover-green);
+}
+@media screen and (min-width: 768px) {
+  .contact-submit-btn {
+    padding: 12px 24px;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .work-together-form {
+    width: 50%;
+    justify-content: end;
+  }
+
+  .form-email-error-message {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--error);
+
+    position: absolute;
+    top: 63%;
+    transform: translateY(-63%);
+  }
+  .form-email-tick {
+    position: absolute;
+    top: 74%;
+    right: 32px;
+    transform: translateY(-74%) translateX(100%);
+  }
+}

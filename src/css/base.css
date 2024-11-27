@@ -8,9 +8,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,8 +22,18 @@
   --hover-green: #009156;
   --light-accet: #bcdfd1;
   --error: #e74a3b;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+body.dark {
+  --white: #1e2023;
+  --black: #f0f0f0;
+  --light-grey: #2a2d32;
+  --hover-grey: #3b3f45;
+  --accet-green: #14c57c;
+  --hover-green: #009156;
+  --light-accet: #204136;
+  --error: #e74a3b;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -34,6 +41,12 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+}
+/* Милиці: */
+body {
+  overflow-x: hidden;
 }
 
 main {
@@ -43,4 +56,16 @@ main {
 @font-face {
   font-family: 'Impact';
   src: url('../fonts/impact.ttf') format('truetype');
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
 }

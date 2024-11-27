@@ -8,7 +8,7 @@
   height: 64px;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .header-logo {
@@ -46,7 +46,7 @@ html {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 0px; 
+  bottom: 0px;
   top: 0px;
   right: 0px;
 }
@@ -54,8 +54,8 @@ html {
 .modal-close {
   position: absolute;
   opacity: 0;
-  height: 32px; 
-   width: 32px;
+  height: 32px;
+  width: 32px;
   fill: transparent;
   stroke: #292929;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,9 +69,7 @@ html {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-.modal-check:checked ~ .menu-icon .modal-svg  {
+.modal-check:checked ~ .menu-icon .modal-svg {
   opacity: 0;
 }
 
@@ -157,9 +155,8 @@ input:checked + .move-span::after {
   .nav-list {
     display: flex;
     gap: 40px;
-
   }
-  
+
   .nav-link {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -171,7 +168,7 @@ input:checked + .move-span::after {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .nav-link:hover {
     color: #00b068;
   }
