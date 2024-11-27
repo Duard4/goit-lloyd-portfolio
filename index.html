@@ -10,19 +10,20 @@
   <script type="module" crossorigin src="/goit-js-team-project/index.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-js-team-project/assets/vendor-Bt0M7z7H.js">
   <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/vendor-DmpqLf7P.css">
-  <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/index-D1FbqRFq.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/index-Dq8HNnPD.css">
 </head>
 
 <body>
   <header class="header">
   <div class="container">
-    <a href="/src/index.html" class="header-logo">
+    <a href="./index.html" class="header-logo">
       lloyd<span class="highlight-green">jefferson.</span>
     </a>
     <div class="nav-container">
       <label class="switch">
-        <input type="checkbox" >
-        <span class="move-span"></span>
+        <input type="checkbox" id="toggle-switch" />
+        <span class="move-span" aria-hidden="true"></span>
+        <span class="visually-hidden">Enable dark mode</span>
       </label>
       <ul class="nav-list">
         <li class="nav-list-item">
@@ -37,7 +38,7 @@
       </ul>
     </div>
     <div class="modal-toggle">
-      <input type="checkbox" id="modal-check" class="modal-check" >
+      <input type="checkbox" id="modal-check" class="modal-check">
       <label for="modal-check" class="menu-icon">
         <svg class="modal-svg" tabindex="0" width="32" height="32">
           <use href="/goit-js-team-project/assets/icons-Dnw26JBX.svg#icon-material-symbols-light_menu"></use>
@@ -52,10 +53,9 @@
 </header>
   <div class="menu_modal" id="menuModal">
   <div class="container">
-    <h2 class="logo">
-      LLOYD<span class="highlight-green">JEFFERSON.</span>
-    </h2>
-
+    <a href="./index.html" class="header-logo">
+      lloyd<span class="highlight-green">jefferson.</span>
+    </a>
     <svg class="icon" id="closeModal">
       <use href="/goit-js-team-project/assets/icons-Dnw26JBX.svg#icon-close"></use>
     </svg>
@@ -427,12 +427,12 @@
       <ul class="reviews-list swiper-wrapper"></ul>
 
       <div class="button-arrows">
-        <button type="button" class="swiper-button-prev">
+        <button type="button" class="swiper-button-prev" aria-label="Previous slide">
           <svg class="icon-arrow-narrow-left arrow-left" width="24" height="24">
             <use href="/goit-js-team-project/assets/icons-Dnw26JBX.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
-        <button type="button" class="swiper-button-next">
+        <button type="button" class="swiper-button-next" aria-label="Next slide">
           <svg class="icon-arrow-narrow-right arrow-right" width="24" height="24">
             <use href="/goit-js-team-project/assets/icons-Dnw26JBX.svg#icon-arrow-narrow-right"></use>
           </svg>
@@ -499,8 +499,7 @@
   <footer class="footer">
     <div class="footer-container container">
         <div class="footer-logo-social">
-            <a href="/" class="footer-logo">lloyd<span class="highlight-green">jefferson.</span></a>
-
+            <a href="./index.html" class="footer-logo">lloyd<span class="highlight-green">jefferson.</span></a>
 
             <ul class="footer-socials">
                 <li>
