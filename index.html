@@ -12,7 +12,7 @@
   <script type="module" crossorigin src="/goit-js-team-project/index.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-js-team-project/assets/vendor-Bt0M7z7H.js">
   <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/vendor-DmpqLf7P.css">
-  <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/index-DugJSMMx.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-team-project/assets/index-CSBy2Xx4.css">
 </head>
 
 <body>
@@ -81,23 +81,23 @@
     <section class="hero-section" id="hero">
   <div class="container hero-container hero-green-dots">
     <div class="title-img">
-      <h1 class="hero-title">
+      <h1 class="hero-title initShow autoShow" style="--i: 1s">
         Hello, I am <span class="highlight-green">Fullstack developer</span>
       </h1>
       <picture>
         <source srcset="/goit-js-team-project/assets/hero-3GYtg5GX.jpg 1x, /goit-js-team-project/assets/hero@2x-KvewgRes.jpg 2x">
-        <img src="/goit-js-team-project/assets/hero-3GYtg5GX.jpg" alt="developer" class="hero-img" width="592" height="444" loading="lazy">
+        <img src="/goit-js-team-project/assets/hero-3GYtg5GX.jpg" alt="developer" class="hero-img initShow" width="592" height="444" loading="lazy" style="--i: 1.5s">
       </picture>
     </div>
     <div class="text-link">
-      <div class="order-link">
+      <div class="order-link initShow autoShow" style="--i: 2s">
         <svg class="arrow" width="28" height="28">
           <use href="/goit-js-team-project/assets/icons-CYWdJ-lh.svg#icon-arrow-long"></use>
         </svg>
         <a href="#work-together" class="hero-link">Order the projects</a>
       </div>
 
-      <p class="hero-sub">
+      <p class="hero-sub initShow autoShow" style="--i: 2.5s">
         I work with people all over the world to create
         <span class="hero-span">impressive</span> and
         <span class="hero-span">functional websites</span> that reflect each
@@ -105,7 +105,7 @@
       </p>
     </div>
   </div>
-  <div class="soc-links">
+  <div class="soc-links initShow autoShow" style="--i: 3s">
     <ul class="soc-list list">
       <li class="soc-item">
         <a href="https://www.instagram.com/goitclub/" target="_blank" class="soc-a">Instagram</a>
@@ -124,12 +124,12 @@
   </div>
 </section>
     <section id="about-me" class="container">
-  <h2 class="about-me-title">
+  <h2 class="about-me-title autoShow">
     ABOUT
     <span class="highlight-green">ME</span>
   </h2>
   <div class="bio-container">
-    <picture class="bio-image">
+    <picture class="bio-image autoShow">
       <source
         srcset="/goit-js-team-project/assets/desktop-D1VyzHua.jpg 1x, /goit-js-team-project/assets/desktop@2x-jc44gLhj.jpg 2x"
         media="(min-width: 1280px)"
@@ -151,8 +151,8 @@
     </picture>
 
     <div class="bio-text-container">
-      <h3 class="about-subtitle">bio</h3>
-      <p class="about-me-discr text-one">
+      <h3 class="about-subtitle autoShow">bio</h3>
+      <p class="about-me-discr text-one autoShow">
         I'm Lloyd Jefferson, a talented programmer specializing in software
         development. My expertise spans various programming languages and
         technologies, and I am dedicated to continually enhancing my skills. I
@@ -161,7 +161,7 @@
         the most challenging tasks.
       </p>
 
-      <p class="about-me-discr text-two">
+      <p class="about-me-discr text-two autoShow">
         Adaptable to both independent and team-oriented work, I collaborate
         seamlessly with colleagues, exchanging ideas and finding optimal
         solutions. My professional maturity enables me to navigate challenges
@@ -175,8 +175,8 @@
   <div class="background-img"></div>
   <div class="bio-list">
     <div class="sec-edu">
-      <h3 class="about-subtitle">education</h3>
-      <ul class="about-me-list">
+      <h3 class="about-subtitle autoShow">education</h3>
+      <ul class="about-me-list autoShow">
         <li class="about-me-item">
           2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
         </li>
@@ -190,9 +190,9 @@
       </ul>
     </div>
 
-    <div class="sec-role">
-      <h3 class="about-subtitle">role</h3>
-      <ul class="about-me-list">
+    <div class="sec-role autoShow">
+      <h3 class="about-subtitle autoShow">role</h3>
+      <ul class="about-me-list autoShow">
         <li class="about-me-item">Frontend development</li>
         <li class="about-me-item">HeadlessCMS, Wordpress</li>
         <li class="about-me-item">Blender (enjoy)</li>
@@ -242,19 +242,19 @@
 </section>
     <section id="projects">
   <div class="container projects-container">
-    <h2 class="projects-title">My <span class="highlight-green">Projects</span></h2>
+    <h2 class="projects-title autoShow">My <span class="highlight-green">Projects</span></h2>
     <ul class="project-list"></ul>
-    <button class="load-more" type="button">Load more</button>
+    <button class="load-more autoShow" type="button">Load more</button>
   </div>
 </section>
     <section id="benefits" class="benefits">
     <div class="benefits-background"></div>
     <div class="container">
-      <h2 class="benefit-title">
+      <h2 class="benefit-title autoShow">
         <span class="highlight-green">BENEFITS</span> OF WORKING WITH ME
       </h2>
       <ul class="benefit-list">
-        <li class="benefit-list-item">
+        <li class="benefit-list-item autoShow">
           <div class="benefit-icon">
             <svg width="24" height="24">
               <use href="/goit-js-team-project/assets/icons-CYWdJ-lh.svg#icon-user"></use>
@@ -266,7 +266,7 @@
             of programming and website development.
           </p>
         </li>
-        <li class="benefit-list-item">
+        <li class="benefit-list-item autoShow">
           <div class="benefit-icon">
             <svg width="24" height="24">
               <use href="/goit-js-team-project/assets/icons-CYWdJ-lh.svg#icon-message-chat-circle"></use>
@@ -278,7 +278,7 @@
             available for discussions and open to corrections.
           </p>
         </li>
-        <li class="benefit-list-item">
+        <li class="benefit-list-item autoShow">
           <div class="benefit-icon">
             <svg width="24" height="24">
               <use href="/goit-js-team-project/assets/icons-CYWdJ-lh.svg#icon-brush"></use>
@@ -290,7 +290,7 @@
             you bring your ideas to life.
           </p>
         </li>
-        <li class="benefit-list-item">
+        <li class="benefit-list-item autoShow">
           <div class="benefit-icon">
             <svg width="24" height="24">
               <use href="/goit-js-team-project/assets/icons-CYWdJ-lh.svg#icon-hourglass"></use>
@@ -307,11 +307,11 @@
   </section>
     <section id="faq" class="faq-section">
   <div class="container green-decor">
-    <h2 class="faq-title">
+    <h2 class="faq-title autoShow">
       Frequently asked <span class="highlight-green">question</span>
     </h2>
     <ul class="faq-list accordion-container">
-      <li class="ac faq-item">
+      <li class="ac faq-item autoShow">
         <h3 class="ac-header faq-header">
           <button class="faq-btn ac-trigger">
             What programming languages are most often used in your project?
@@ -328,7 +328,7 @@
           </p>
         </div>
       </li>
-      <li class="ac faq-item">
+      <li class="ac faq-item autoShow">
         <h3 class="ac-header faq-header">
           <button class="faq-btn ac-trigger">
             What are the deadlines for the project?
@@ -347,7 +347,7 @@
           </p>
         </div>
       </li>
-      <li class="ac faq-item">
+      <li class="ac faq-item autoShow">
         <h3 class="ac-header faq-header">
           <button class="ac-trigger faq-btn" data-accordion-btn>
             What payment methods do you accept?
@@ -364,7 +364,7 @@
           </p>
         </div>
       </li>
-      <li class="ac faq-item">
+      <li class="ac faq-item autoShow">
         <h3 class="ac-header faq-header">
           <button class="faq-btn ac-trigger" data-accordion-btn>
             How can I contact you?
@@ -381,7 +381,7 @@
           </p>
         </div>
       </li>
-      <li class="ac faq-item">
+      <li class="ac faq-item autoShow">
         <h3 class="ac-header faq-header">
           <button class="faq-btn ac-trigger" data-accordion-btn>
             Do you provide advice or support?
@@ -400,7 +400,7 @@
           </p>
         </div>
       </li>
-      <li class="ac faq-item">
+      <li class="ac faq-item autoShow">
         <h3 class="ac-header faq-header">
 
           <button class="faq-btn ac-trigger" data-accordion-btn>
@@ -424,8 +424,8 @@
 </section>
     <section class="reviews" id="reviews">
   <div class="container">
-    <h2 class="reviews-title">reviews</h2>
-    <div class="swiper swiper">
+    <h2 class="reviews-title autoShow">reviews</h2>
+    <div class="swiper autoShow">
       <ul class="reviews-list swiper-wrapper"></ul>
 
       <div class="button-arrows">
@@ -447,16 +447,16 @@
   <div class="container work-together-container green-dots">
     <div class="contact-box">
 
-      <h2 class="work-together-title">
+      <h2 class="work-together-title autoShow">
         <span class="one-line">
           <span>let’s</span>
           <span class="highlight-green">work</span></span>
         <span class="highlight-green">together</span>
       </h2>
 
-      <p>Contact me to transform your ideas into exceptional solutions.</p>
+      <p class="autoShow">Contact me to transform your ideas into exceptional solutions.</p>
       <address>
-        <ul class="address-list">
+        <ul class="address-list autoShow">
           <li class="address-list-item">
             <a href="tel:+380904567890">
               <svg class="address-icon">
@@ -484,24 +484,24 @@
 
     <!--    using novalidate to prevent defaultInputCheckingMessage -->
     <form class="work-together-form" novalidate>
-      <input class="form-input-base form-email" type="email" name="contact-email" id="contact-email"
+      <input class="form-input-base form-email autoShow" type="email" name="contact-email" id="contact-email"
         placeholder="Your email*" required >
       <svg class="form-email-tick visually-hidden">
         <use href="/goit-js-team-project/assets/icons-CYWdJ-lh.svg#icon-success" width="16" height="16"></use>
       </svg>
       <p class="form-email-error-message visually-hidden">Invalid email, try again</p>
-      <textarea class="form-input-base form-message" name="contact-message" id="contact-message"
+      <textarea class="form-input-base form-message autoShow" name="contact-message" id="contact-message"
         placeholder="Message"></textarea>
-      <button type="submit" class="contact-submit-btn">Send message</button>
+      <button type="submit" class="contact-submit-btn autoShow">Send message</button>
     </form>
   </div>
 </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-container container">
+    <div class="footer-container container autoShow">
         <div class="footer-logo-social">
-            <a href="./index.html" class="footer-logo">lloyd<span class="highlight-green">jefferson.</span></a>
+            <a href="./index.html" class="footer-logo ">lloyd<span class="highlight-green">jefferson.</span></a>
 
             <ul class="footer-socials">
                 <li>
