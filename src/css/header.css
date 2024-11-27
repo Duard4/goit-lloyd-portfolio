@@ -85,7 +85,7 @@ html {
   border-radius: 16px;
   width: 48px;
   height: 24px;
-  background-color: #e4e5e6;
+  background-color: var(--light-grey);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -113,7 +113,7 @@ html {
 }
 
 input:checked + .move-span {
-  background-color: #292929;
+  background-color: var(--black);
 }
 
 input:checked + .move-span::before {
@@ -121,7 +121,7 @@ input:checked + .move-span::before {
   transform: translateX(24px);
 }
 input:checked + .move-span::after {
-  background-color: #292929;
+  background-color: var(--black);
   transform: translateX(18px);
 }
 
