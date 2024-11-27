@@ -1,26 +1,26 @@
-<section class="work-together-sec">
+<section class="work-together-sec" id="work-together">
   <div class="container work-together-container green-dots">
     <div class="contact-box">
 
-      <h2 class="work-together-title">
+      <h2 class="work-together-title autoShow">
         <span class="one-line">
           <span>let’s</span>
-          <span style="color: var(--accet-green)">work</span></span>
-        <span style="color: var(--accet-green)">together</span>
+          <span class="highlight-green">work</span></span>
+        <span class="highlight-green">together</span>
       </h2>
 
-      <p>Contact me to transform your ideas into exceptional solutions.</p>
+      <p class="autoShow">Contact me to transform your ideas into exceptional solutions.</p>
       <address>
-        <ul class="address-list">
+        <ul class="address-list autoShow">
           <li class="address-list-item">
-            <a href="tel:+38 090 456 78 90">
+            <a href="tel:+380904567890">
               <svg class="address-icon">
                 <use href="/img/icons.svg#icon-phone" width="24" height="24"></use>
               </svg>
               <span class="address-text">+38 090 456 78 90</span></a>
           </li>
           <li class="address-list-item">
-            <a href="mailto: lloydjefferson@gmail.com">
+            <a href="mailto:lloydjefferson@gmail.com">
               <svg class="address-icon">
                 <use href="/img/icons.svg#icon-mail" width="24" height="24"></use>
               </svg>
@@ -39,15 +39,15 @@
 
     <!--    using novalidate to prevent defaultInputCheckingMessage -->
     <form class="work-together-form" novalidate>
-      <input class="form-input-base form-email" type="email" name="contact-email" id="contact-email"
-        placeholder="Your email*" required />
+      <input class="form-input-base form-email autoShow" type="email" name="contact-email" id="contact-email"
+        placeholder="Your email*" required >
       <svg class="form-email-tick visually-hidden">
         <use href="/img/icons.svg#icon-success" width="16" height="16"></use>
       </svg>
       <p class="form-email-error-message visually-hidden">Invalid email, try again</p>
-      <textarea class="form-input-base form-message" name="contact-message" id="contact-message"
+      <textarea class="form-input-base form-message autoShow" name="contact-message" id="contact-message"
         placeholder="Message"></textarea>
-      <button type="submit" class="contact-submit-btn">Send message</button>
+      <button type="submit" class="contact-submit-btn autoShow">Send message</button>
     </form>
   </div>
 </section>

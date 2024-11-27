@@ -83,7 +83,7 @@ function renderFunction(reviews) {
         `<li class="swiper-slide" id="${_id}">
            <p class="card-text">${review}</p>
            <div class="card-person-info">
-             <img class="card-avatar" src="${avatar_url}" alt="${author}" width="40" height="40"/>
+             <img class="card-avatar" src="${avatar_url}" alt="${author}" width="40" height="40" loading="lazy">
              <p class="card-author">${author}</p>
            </div>
        </li> `

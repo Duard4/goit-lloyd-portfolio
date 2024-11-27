@@ -1,3 +1,9 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+
+
 .form-modal-wrapper {
   min-width: 280px;
   max-width: 320px;
@@ -35,6 +41,7 @@
   display: block;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .form-modal-wrapper {
@@ -62,7 +69,7 @@
 
   transform: translateY(-124px) translateX(calc(50% - 32px));
 
-  background-image: url('/img/green-dots-work-together-tab-1x.png');
+  background-image: url('/img/work-together/green-dots-work-together-tab-1x.png');
   background-repeat: no-repeat;
   background-position: top right;
   pointer-events: none;
@@ -74,19 +81,31 @@
 }
 @media screen and (min-width: 768px) {
   .green-dots::after {
-    background-image: image-set(
-      url('/img/green-dots-work-together-tab-1x.png') 1x,
-      url('/img/green-dots-work-together-tab-2x.png') 2x
+    background-image: url('/img/work-together/green-dots-work-together-tab-1x.png'); /* Fallback */
+    background-image: -webkit-image-set(
+      url('/img/work-together/green-dots-work-together-tab-1x.png') 1x,
+      url('/img/work-together/green-dots-work-together-tab-2x.png') 2x
     );
+    /*background-image: image-set(*/
+    /*  url('/img/work-together/green-dots-work-together-tab-1x.png') 1x,*/
+    /*  url('/img/work-together/green-dots-work-together-tab-2x.png') 2x*/
+    /*);*/
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1280px) {
   .green-dots::after {
     transform: translateY(-124px) translateX(calc(50% - 32px));
-    background-image: image-set(
-      url('/img/green-dots-work-together-pc-1x.png') 1x,
-      url('/img/green-dots-work-together-pc-2x.png') 2x
+    background-image: url('/img/work-together/green-dots-work-together-pc-1x.png'); /* Fallback */
+    background-image: -webkit-image-set(
+      url('/img/work-together/green-dots-work-together-pc-1x.png') 1x,
+      url('/img/work-together/green-dots-work-together-pc-2x.png') 2x
     );
+    /*background-image: image-set(*/
+    /*  url('/img/work-together/green-dots-work-together-pc-1x.png') 1x,*/
+    /*  url('/img/work-together/green-dots-work-together-pc-2x.png') 2x*/
+    /*);*/
+    background-repeat: no-repeat;
   }
 }
 
@@ -243,9 +262,7 @@
 .form-email.error-color {
   color: var(--error);
 }
-/*.form-email:hover, .form-email:focus, .form-message:hover, .form-message:focus {*/
-/*  outline: 2px solid var(--accet-green);*/
-/*}*/
+
 .form-email-error-message {
   font-weight: 300;
   font-size: 0.75rem;
@@ -259,6 +276,7 @@
 .form-email-tick {
   position: absolute;
   top: 11%;
+  fill: var(--accet-green);
   right: 32px;
   transform: translateY(-11%) translateX(100%);
 }

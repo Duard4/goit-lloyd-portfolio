@@ -43,9 +43,6 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--black);
   background-color: var(--white);
-}
-/* Милиці: */
-body {
   overflow-x: hidden;
 }
 
@@ -56,6 +53,7 @@ main {
 @font-face {
   font-family: 'Impact';
   src: url('../fonts/impact.ttf') format('truetype');
+  font-display: swap;
 }
 
 .visually-hidden {
@@ -65,7 +63,7 @@ main {
   margin: -1px;
   border: 0;
   padding: 0;
-
+  overflow: hidden;
   white-space: nowrap;
   clip-path: inset(100%);
 }

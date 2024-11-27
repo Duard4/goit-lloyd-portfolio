@@ -1,8 +1,33 @@
 .hero-section {
-  background-image: url(/img/bg-img-mob.png), url(/img/bg-img-mob2.png);
+  margin-top: 16px;
+}
+
+.hero-container {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+.hero-green-dots {
+  position: relative;
+  z-index: 1;
+}
+.hero-green-dots::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url(/img/hero/bg-img-mob.png), url(/img/hero/bg-img-mob2.png);
   background-repeat: no-repeat;
-  background-size: 351px 264px, 170px 130px;
-  background-position: right 10px, left 150px top 350px;
+  /*background-size: 351px 264px, 170px 130px;*/
+  background-position: right 18px top 10px, left 160px top 350px;
+  filter: blur(3px);
+  z-index: -1;
 }
 
 .hero-img {
@@ -10,20 +35,17 @@
 }
 
 .title-img {
-  padding-top: 96px;
+
   margin-bottom: 72px;
 }
 
 .hero-title {
   font-family: 'Impact';
   font-size: 4rem;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black);
-  letter-spacing: 0.03em;
   line-height: 1.25;
-}
-.title-span {
-  color: var(--accet-green);
 }
 
 .order-link {
@@ -38,8 +60,7 @@
   min-width: 28px;
   opacity: 1;
   transition: opacity 0.8s ease;
-  fill: none;
-  stroke: var(--accet-green);
+  fill: var(--accet-green);
 }
 
 .hero-link {
@@ -56,32 +77,21 @@
 .hero-link::after {
   content: '';
   height: 96px;
-  width: 165px;
+  width: clamp(125px, calc(125px + (40 * ((100vw - 320px) / 40))), 165px);;
   border-radius: 16px;
   background-color: var(--light-accet);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 50%;
+  left: 110px;
   z-index: -1;
   transition: left 0.8s ease, background-color 0.8s ease;
   pointer-events: none;
 }
 
-.order-link:hover .hero-link {
-  color: var(--white);
-}
-.order-link:hover .hero-link::after {
-  background-color: var(--accet-green);
-  left: -10%;
-}
 
-.order-link:hover .arrow {
-  opacity: 0;
-}
 
 .text-link {
-  margin-bottom: 72px;
   justify-content: space-between;
 }
 
@@ -91,7 +101,6 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  min-width: 320px;
 }
 
 .hero-span {
@@ -125,11 +134,30 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section {
-    background-image: url(../img/bg-img-tab.png), url(../img/bg-img-tab2.png);
+  .hero-container {
+    padding-top: 88px;
+    padding-bottom: 104px;
+  }
+  .hero-green-dots {
+    background-image: url(/img/hero/bg-img-tab.png), url(/img/hero/bg-img-tab2.png);
     background-repeat: no-repeat;
-    background-size: 356px 276px;
-    background-position: top 40px left 415px, top 500px left 145px;
+    /*background-size: 356px 276px;*/
+    background-position: top 0 left 420px, top 485px left 145px;
+  }
+
+  .hero-green-dots::before {
+    display: none;
+  }
+  .order-link:hover .hero-link {
+    color: var(--white);
+  }
+  .order-link:hover .hero-link::after {
+    background-color: var(--accet-green);
+    left: -10%;
+  }
+
+  .order-link:hover .arrow {
+    opacity: 0;
   }
 
   .title-img {
@@ -151,11 +179,9 @@
 
   .hero-link::after {
     width: 261px;
+    left: 50%;
   }
 
-  .text-link {
-    margin-bottom: 104px;
-  }
 
   .hero-sub {
     font-size: 1.25rem;
@@ -179,16 +205,25 @@
 
 @media screen and (min-width: 1280px) {
   .hero-section {
-    background-image: url(../img/bg-img-desc.png), url(../img/bg-img-desc2.png);
+    margin-top: 0;
+  }
+  .hero-container {
+    padding-bottom: 80px;
+    padding-top: 88px;
+  }
+  .hero-green-dots {
+    background-image: url(/img/hero/bg-img-desc.png), url(/img/hero/bg-img-desc2.png);
     background-repeat: no-repeat;
-    background-size: 356px 276px;
-    background-position: top 60px right 50px, top 520px right 680px;
+    /*background-size: 356px 276px;*/
+    background-position: top 30px right 50px, top 520px right 680px;
+    margin-bottom: 16px;
   }
 
   .hero-img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 32px;
   }
 
   .hero-title {
@@ -206,7 +241,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 96px;
   }
 
   .order-link {
@@ -222,3 +256,4 @@
     width: 592px;
   }
 }
+

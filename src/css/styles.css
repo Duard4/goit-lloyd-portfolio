@@ -8,6 +8,7 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
+@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -36,4 +37,36 @@ main {
   main {
     gap: 164px;
   }
+}
+
+.highlight-green {
+  color: var(--accet-green);
+}
+
+body:not(.dark) .highlight-green {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* Black shadow */
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--accet-green);
+  border: none;
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: none; 
+  z-index: 1000;
+}
+.scroll-to-top-icon {
+  transform: rotate(180deg);
+  stroke: var(--white);
+  fill: none;
+}
+.scroll-to-top-btn:hover {
+  background-color: var(--hover-green);
 }
