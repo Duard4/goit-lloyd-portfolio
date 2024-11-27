@@ -70,13 +70,7 @@ img {
   opacity: 1;
   visibility: visible;
 }
-.logo {
-  width: 360px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .logo_menu {
   width: 360px;
   height: 64px;
