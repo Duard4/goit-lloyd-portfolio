@@ -25,12 +25,13 @@
   padding-block: 16px;
 }
 @media (min-width: 360px) {
-.menu_modal .container {
-  width: 100%;
-  padding: 20px;
-}}
+  .menu_modal .container {
+    width: 100%;
+    padding: 20px;
+  }
+}
 
-.logo_menu {  
+.logo_menu {
   width: 100%;
   max-width: 360px;
   display: flex;
@@ -51,7 +52,32 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-
+.container .logo {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.menu_modal.open .logo {
+  transition-delay: 1s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.container .logo {
+  transition-delay: 0.3s;
+}
+.container .icon {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.menu_modal.open .icon {
+  transition-delay: 1s;
+  opacity: 1;
+  transform: translateX(0);
+}
+.container .icon {
+  transition-delay: 0.3s;
+}
 
 .icon {
   z-index: 10001;
@@ -78,6 +104,64 @@
   align-items: center;
   flex-direction: column;
   gap: 24px;
+}
+.option .li-order {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.li-order {
+  position: relative; /* Обязательно */
+}
+
+.menu_modal.open .li-order {
+  transition-delay: 1s;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.option .li-order:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.option .li-order:nth-child(2) {
+  transition-delay: 0.7s;
+}
+.option .li-order:nth-child(3) {
+  transition-delay: 0.9s;
+}
+.explosion {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.explosion div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  animation: particleMove 4s ease-out forwards;
+}
+
+/* Всплеск анимации для частиц */
+@keyframes particleMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+        calc(200px - 400px * var(--randomX)),
+        calc(200px - 400px * var(--randomY))
+      )
+      scale(0.5);
+    opacity: 0;
+  }
 }
 
 .option a {
