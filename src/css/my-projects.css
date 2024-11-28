@@ -15,9 +15,7 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-.title-span {
-  color: var(--accet-green);
-}
+
 @media screen and (min-width: 768px) {
   .projects-title {
     font-size: 6.75rem;
@@ -60,6 +58,9 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--black);
+}
+.diagonal-arrow-icon {
+  stroke: var(--accet-green);
 }
 .projects-title-visit-wrapper {
   display: flex;

@@ -37,3 +37,7 @@ main {
     gap: 164px;
   }
 }
+
+.highlight-green {
+  color: var(--accet-green);
+}

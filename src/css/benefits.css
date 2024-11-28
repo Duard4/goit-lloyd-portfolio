@@ -9,11 +9,7 @@
   font-size: 3.25rem;
   letter-spacing: 0.03em;
   line-height: 1.231;
-  color: var(--text-color);
-}
-
-.benefit-title .benefit-highlight {
-  color: var(--accet-green);
+  color: var(--black);
 }
 
 .benefit-list-item {
@@ -42,12 +38,12 @@
   font-size: 1.125rem;
   letter-spacing: 0.031rem;
   line-height: 1.75;
-  color: var(--text-color);
+  color: var(--black);
 }
 
 .benefit-list-text {
   margin: 0;
-  color: var(--text-color);
+  color: var(--black);
   margin-bottom: 32px;
   font-size: 1rem;
   letter-spacing: 0.013rem;
@@ -112,7 +108,6 @@
   }
   .benefit-list-text {
     margin: 0;
-    margin-bottom: 0px;
   }
 }
 
@@ -140,22 +135,26 @@
     max-width: 690px;
   }
   .benefits-background {
-    width: 506px;
-    height: 348px;
-    background-image: url(/img/bg-images/decor-bg-3.webp);
+    width: 538px;
+    height: 408px;
+
+    background-image: url("/img/benefits/decor-ben-1x.png");
+    background-image: -webkit-image-set(
+      url('/img/benefits/decor-ben-1x.png') 1x,
+      url('/img/benefits/decor-ben-2x.png') 2x
+    );
     position: absolute;
     margin-right: 0;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transform: translate(825px, -95px);
+    transform: translate(52.5vw, -5vw);
+
   }
 
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-    .benefits-background {
-      background-image: url(/img/bg-images/decor-bg-3.webp);
-    }
-  }
+  /*@media screen and (-webkit-min-device-pixel-ratio: 2),*/
+  /*  (min-resolution: 2dppx),*/
+  /*  (min-resolution: 192dpi) {*/
+  /*  .benefits-background {*/
+  /*    background-image: url(/img/bg-images/decor-bg-3.webp);*/
+  /*  }*/
+  /*}*/
 }

@@ -45,9 +45,9 @@ body {
   background-color: var(--white);
 }
 /* Милиці: */
-body {
-  overflow-x: hidden;
-}
+/*body {*/
+/*  overflow-x: hidden;*/
+/*}*/
 
 main {
   flex-grow: 1;
