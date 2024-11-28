@@ -1,11 +1,12 @@
 .header .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px;
-  height: 64px;
+  padding-block: 16px;
+}
+@media (min-width: 360px) {
+  .header .container {
+    padding: 20px;
+  }
 }
 html {
   scroll-behavior: smooth;
@@ -19,14 +20,6 @@ html {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #292929;
-}
-.header-logo_sp {
-  font-family: 'Impact', sans-serif;
-  font-size: 1.5rem;
-  line-height: 1;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #00b068;
 }
 .modal-toggle {
   position: relative;
@@ -117,7 +110,7 @@ html {
   background-color: #00b068;
   width: 20px;
   height: 20px;
-  border-radius: 100%;
+  border-radius: 50%;
   transition: 0.3s;
 }
 .move-span::after {
@@ -127,7 +120,7 @@ html {
   background-color: transparent;
   width: 20px;
   height: 20px;
-  border-radius: 100%;
+  border-radius: 50%;
   transition: 0.3s;
 }
 
@@ -142,6 +135,11 @@ input:checked + .move-span::before {
 input:checked + .move-span::after {
   background-color: #292929;
   transform: translateX(18px);
+}
+
+.menu-icon {
+  stroke: var(--black);
+  transition: stroke var(--animation);
 }
 
 @media screen and (min-width: 768px) {

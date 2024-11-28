@@ -19,22 +19,27 @@
   opacity: 1;
 }
 
-.logo {
-  width: 360px;
-  padding: 16px;
+.menu_modal .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding-block: 16px;
 }
-.logo_menu {
-  width: 360px;
+@media (min-width: 360px) {
+.menu_modal .container {
+  width: 100%;
+  padding: 20px;
+}}
+
+.logo_menu {  
+  width: 100%;
+  max-width: 360px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
 
-.logo_part1 {
+.logo {
   font-size: 1.5rem;
   display: flex;
   font-family: Impact;
@@ -47,9 +52,6 @@
   text-decoration-skip-ink: none;
 }
 
-.logo_part1 .logo_part2 {
-  color: var(--accet-green);
-}
 
 .icon {
   z-index: 10001;
@@ -66,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/img/decorbg1.png);
+  background-image: url(/img/modal/decorbg1.png);
 }
 
 .option {

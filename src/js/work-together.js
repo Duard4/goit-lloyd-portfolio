@@ -3,6 +3,7 @@ import 'basiclightbox/dist/basicLightbox.min.css';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import icons from '/img/icons.svg';
 
 const emailInput = document.querySelector('#contact-email');
 const form = document.querySelector('.work-together-form');
@@ -31,8 +32,7 @@ async function pushRequest(data) {
       // Server responded with a status outside the 2xx range
       iziToast.error({
         title: 'Server Error',
-        message:
-          error.response.data.message || 'Something went wrong on the server.',
+        message: error.response.data.message || 'Something went wrong on the server.',
         position: 'topRight',
         timeout: 5000,
       });
@@ -40,8 +40,7 @@ async function pushRequest(data) {
       // Request was made but no response was received
       iziToast.error({
         title: 'Network Error',
-        message:
-          'Unable to connect to the server. Please check your internet connection.',
+        message: 'Unable to connect to the server. Please check your internet connection.',
         position: 'topRight',
         timeout: 5000,
       });
@@ -62,7 +61,7 @@ const modal = basicLightbox.create(
       <div class="form-modal">
         <div class="form-modal-icon-close-wrapper">
           <svg class="form-modal-icon-close" style="stroke: var(--black);">
-            <use href="../img/icons.svg#icon-diagonal-arrow" width="24" height="24"></use>
+            <use href="${icons}#icon-close" width="24" height="24"></use>
           </svg>
         </div>
         <div class="form-modal-text-container">
@@ -71,9 +70,15 @@ const modal = basicLightbox.create(
         </div>
       </div>
     </div>
-`,
-  { closable: false }
-);
+`, {
+    closable: true,
+    onShow: (modal) => {
+      document.body.classList.add('no-scroll');
+    },
+    onClose: (modal) => {
+      document.body.classList.remove('no-scroll');
+    },
+  });
 
 emailInput.addEventListener('input', () => {
   if (!emailRegex.test(emailInput.value)) {
@@ -102,11 +107,15 @@ form.addEventListener('submit', e => {
   }
 });
 
-modal
-  .element()
-  .querySelector('.form-modal-icon-close')
-  .addEventListener('click', e => {
-    e.preventDefault();
+modal.element().querySelector('.form-modal-icon-close').addEventListener('click', e => {
+  e.preventDefault();
 
+  modal.close();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && modal.visible()) {
     modal.close();
-  });
+  }
+  modal.close();
+});
