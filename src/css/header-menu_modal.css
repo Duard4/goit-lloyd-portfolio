@@ -111,7 +111,7 @@
   transition: opacity 1s ease, transform 1s ease;
 }
 .li-order {
-  position: relative; /* Обязательно */
+  position: relative;
 }
 
 .menu_modal.open .li-order {
@@ -148,7 +148,6 @@
   animation: particleMove 4s ease-out forwards;
 }
 
-/* Всплеск анимации для частиц */
 @keyframes particleMove {
   0% {
     transform: translate(0, 0) scale(1);
