@@ -35,17 +35,14 @@ if (openModalBtn && closeModalButton && menuModal) {
 
 document.querySelectorAll('.li-order').forEach(item => {
   item.addEventListener('click', event => {
-    event.preventDefault(); // Останавливаем стандартное поведение перехода
+    event.preventDefault();
 
-    const href = item.querySelector('a').getAttribute('href'); // Получаем ссылку
-    createExplosion(event.clientX, event.clientY); // Создаем анимацию взрыва
+    const href = item.querySelector('a').getAttribute('href');
+    createExplosion(event.clientX, event.clientY);
 
-    // Получаем элемент взрыва
     const explosion = document.querySelector('.explosion');
 
-    // Добавляем обработчик завершения анимации
     explosion.addEventListener('animationend', () => {
-      // Переходим на новую секцию после завершения анимации
       window.location.href = href;
     });
   });
@@ -57,17 +54,15 @@ function createExplosion(x, y) {
   explosion.style.left = `${x}px`;
   explosion.style.top = `${y}px`;
 
-  // Создаем частицы с случайным направлением
   for (let i = 0; i < 20; i++) {
     const particle = document.createElement('div');
-    particle.style.setProperty('--randomX', (Math.random() - 0.5) * 2); // Случайное значение для X
-    particle.style.setProperty('--randomY', (Math.random() - 0.5) * 2); // Случайное значение для Y
+    particle.style.setProperty('--randomX', (Math.random() - 0.5) * 2);
+    particle.style.setProperty('--randomY', (Math.random() - 0.5) * 2);
     explosion.appendChild(particle);
   }
 
   document.body.appendChild(explosion);
 
-  // Удаляем элемент после завершения анимации
   explosion.addEventListener('animationend', () => {
     explosion.remove();
   });
