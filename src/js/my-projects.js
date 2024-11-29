@@ -123,7 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function loadProjects() {
     const nextProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
-    nextProjects.forEach(project => {
+    let firstProjectItem;
+
+    nextProjects.forEach((project, index)=> {
       const projectItem = document.createElement('li');
       projectItem.innerHTML = `
         <img srcset="${project.imageURL.x1} 1x, ${project.imageURL.x2} 2x" alt="${project.title}" loading="lazy">
@@ -140,9 +142,19 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `;
+      projectItem.classList.add("autoShow")
       projectList.appendChild(projectItem);
+      if (index === 0) {
+        firstProjectItem = projectItem;
+      }
     });
     currentIndex += projectsPerPage;
+    if (firstProjectItem && currentIndex !== projectsPerPage) {
+      firstProjectItem.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
     if (currentIndex >= projects.length) {
       loadMoreBtn.style.display = 'none';
     }

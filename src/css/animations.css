@@ -1,0 +1,30 @@
+.autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.initShow {
+    opacity: 0; /* Element is hidden initially */
+    transform: translateY(200px); /* Starts lower than its final position */
+    animation: initShow var(--i) forwards; /* Run the animation on load */
+}
+
+@keyframes initShow {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

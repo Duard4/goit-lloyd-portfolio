@@ -1,23 +1,31 @@
 <section class="hero-section" id="hero">
   <div class="container hero-container hero-green-dots">
     <div class="title-img">
-      <h1 class="hero-title">
+      <h1 class="hero-title initShow autoShow" style="--i: 1s">
         Hello, I am <span class="highlight-green">Fullstack developer</span>
       </h1>
       <picture>
         <source srcset="/img/hero/hero.jpg 1x, /img/hero/hero@2x.jpg 2x" />
-        <img src="/img/hero/hero.jpg" alt="developer" class="hero-img" />
+        <img
+          src="/img/hero/hero.jpg"
+          alt="developer"
+          class="hero-img initShow"
+          width="592"
+          height="444"
+          loading="lazy"
+          style="--i: 1.5s"
+        />
       </picture>
     </div>
     <div class="text-link">
-      <div class="order-link">
+      <div class="order-link initShow autoShow" style="--i: 2s">
         <svg class="arrow" width="28" height="28">
           <use href="/img/icons.svg#icon-arrow-long"></use>
         </svg>
         <a href="#work-together" class="hero-link">Order the projects</a>
       </div>
 
-      <p class="hero-sub">
+      <p class="hero-sub initShow autoShow" style="--i: 2.5s">
         I work with people all over the world to create
         <span class="hero-span">impressive</span> and
         <span class="hero-span">functional websites</span> that reflect each
@@ -25,7 +33,7 @@
       </p>
     </div>
   </div>
-  <div class="soc-links">
+  <div class="soc-links initShow autoShow" style="--i: 3s">
     <ul class="soc-list list">
       <li class="soc-item">
         <a

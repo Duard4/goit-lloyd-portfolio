@@ -1,7 +1,7 @@
 <section class="work-together-sec" id="work-together">
   <div class="container work-together-container green-dots">
     <div class="contact-box">
-      <h2 class="work-together-title">
+      <h2 class="work-together-title autoShow">
         <span class="one-line">
           <span>lets</span>
           <span class="highlight-green">work</span></span
@@ -9,9 +9,11 @@
         <span class="highlight-green">together</span>
       </h2>
 
-      <p>Contact me to transform your ideas into exceptional solutions.</p>
+      <p class="autoShow">
+        Contact me to transform your ideas into exceptional solutions.
+      </p>
       <address>
-        <ul class="address-list">
+        <ul class="address-list autoShow">
           <li class="address-list-item">
             <a href="tel:+380904567890">
               <svg class="address-icon">
@@ -37,7 +39,11 @@
             >
           </li>
           <li class="address-list-item">
-            <a href="">
+            <a
+              href="https://www.google.com/maps?q=New+York"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg class="address-icon">
                 <use
                   href="/img/icons.svg#icon-location"
@@ -55,7 +61,7 @@
     <!--    using novalidate to prevent defaultInputCheckingMessage -->
     <form class="work-together-form" novalidate>
       <input
-        class="form-input-base form-email"
+        class="form-input-base form-email autoShow"
         type="email"
         name="contact-email"
         id="contact-email"
@@ -69,12 +75,14 @@
         Invalid email, try again
       </p>
       <textarea
-        class="form-input-base form-message"
+        class="form-input-base form-message autoShow"
         name="contact-message"
         id="contact-message"
         placeholder="Message"
       ></textarea>
-      <button type="submit" class="contact-submit-btn">Send message</button>
+      <button type="submit" class="contact-submit-btn autoShow">
+        Send message
+      </button>
     </form>
   </div>
 </section>

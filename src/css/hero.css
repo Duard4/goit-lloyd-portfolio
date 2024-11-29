@@ -130,7 +130,7 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  transition: color 0.8s ease;
+  transition: color var(--animation);
 }
 
 @media screen and (min-width: 768px) {
@@ -199,7 +199,7 @@
 
   .soc-item:hover {
     color: var(--accet-green);
-    transition: color 0.8s ease;
+    transition: color var(--animation);
   }
 }
 
