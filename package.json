@@ -1,11 +1,11 @@
 {
-  "name": "goit-js-team-project",
+  "name": "goit-lloyd-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-js-team-project/",
+    "build": "vite build --base=/goit-lloyd-portfolio/",
     "preview": "vite preview"
   },
   "devDependencies": {
