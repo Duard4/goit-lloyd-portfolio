@@ -7,7 +7,7 @@
   letter-spacing: 0.02em;
 
   li {
-    text-wrap-mode: nowrap;
+    text-wrap: nowrap;
     position: relative;
   }
   li::before {

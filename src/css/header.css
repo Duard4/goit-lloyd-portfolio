@@ -4,9 +4,9 @@
   padding-block: 16px;
 }
 @media (min-width: 360px) {
-.header .container {
-  padding: 20px;
-}
+  .header .container {
+    padding: 20px;
+  }
 }
 html {
   scroll-behavior: smooth;
@@ -19,10 +19,9 @@ html {
   line-height: 1;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #292929;
 }
-
 .modal-toggle {
-  left: 0;
   position: relative;
 }
 .modal-btn {
@@ -50,6 +49,8 @@ html {
   opacity: 0;
   height: 32px;
   width: 32px;
+
+  fill: var(--black);
   fill: transparent;
   stroke: var(--black);
   transition: opacity var(--animation);
@@ -59,8 +60,17 @@ html {
   opacity: 1;
   height: 32px;
   width: 32px;
+
   fill: var(--black);
   transition: opacity var(--animation);
+}
+
+.modal-check:checked ~ .menu-icon .modal-svg {
+  opacity: 0;
+}
+
+.modal-check:checked ~ .menu-icon .modal-close {
+  opacity: 1;
 }
 
 .nav-list {
@@ -95,7 +105,7 @@ html {
   top: 2px;
   left: 2px;
   content: '';
-  background-color: var(--accet-green);
+  background-color: #00b068;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -117,7 +127,7 @@ input:checked + .move-span {
 }
 
 input:checked + .move-span::before {
-  background-color: var(--accet-green);
+  background-color: #00b068;
   transform: translateX(24px);
 }
 input:checked + .move-span::after {
@@ -125,12 +135,10 @@ input:checked + .move-span::after {
   transform: translateX(18px);
 }
 
-.menu-icon{
+.menu-icon {
   stroke: var(--black);
   transition: stroke var(--animation);
 }
-
-
 
 @media screen and (min-width: 768px) {
   .header .container {
@@ -161,7 +169,7 @@ input:checked + .move-span::after {
   }
 
   .nav-link:hover {
-    color: var(--accet-green);
+    color: #00b068;
   }
 
   .nav-container {
